@@ -1,9 +1,0 @@
-PROC foo : a.babar () : I32
-DO FOR.bar()
-  foo : bar.baz
-  foo AND bar OR baz <= 8;o
-  foo[-1]
-  s.len|foo
-
-VAR : bar
-
