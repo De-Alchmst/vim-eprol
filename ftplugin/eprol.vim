@@ -92,7 +92,7 @@ if exists("g:eprol_abbr")
   iabbr <buffer> record RECORD
   iabbr <buffer> do DO
   iabbr <buffer> end END
-  iabbr <buffer> cese CESE
+  iabbr <buffer> case CASE
   iabbr <buffer> of OF
   iabbr <buffer> loop LOOP
   iabbr <buffer> while WHILE
