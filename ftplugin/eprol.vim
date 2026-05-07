@@ -136,4 +136,6 @@ if exists("g:eprol_abbr")
   iabbr <buffer> nxor NXOR
   iabbr <buffer> bool BOOL
   iabbr <buffer> nbool NBOOL
+  iabbr <buffer> true TRUE
+  iabbr <buffer> false FALSE
 endif
