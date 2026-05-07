@@ -66,7 +66,7 @@ function! EprolIndent(lnum)
   endif
 
   " types
-  if cur_line =~# '^\s*[IF]\(32\|64\)\>'
+  if cur_line =~# '^\s\{,4\}[IF]\(32\|64\)\>'
     let indent = 0
   endif
 
@@ -82,6 +82,9 @@ endfunction
 
 " ABBREVIATIONS "
 if exists("g:eprol_abbr")
+  " trigger abbrevations on newline.
+  " must be via <expr> will cause infinite recursion otherwise (even with noremap
+  inore <buffer> <expr> <CR> "<C-]><CR>"
   iabbr <buffer> import IMPORT
   iabbr <buffer> export EXPORT
   iabbr <buffer> use USE
