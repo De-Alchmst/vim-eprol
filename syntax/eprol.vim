@@ -34,11 +34,11 @@ highlight default link EprolType Type
 syntax keyword EprolKeyword
   \ IMPORT EXPORT USE VAR CONST STATIC ENUM RECORD CASE OF LOOP WHILE FOR FROM
   \ TO DOWNTO STEP IF ELIF ELSE DO END AS NEXT BREAK PROC GIVE RETURN ACCESSOR
-  \ UNTIL
+  \ UNTIL EXTENDS
 highlight default link EprolKeyword Keyword
  
-" CONSTANTS "
-syntax keyword EprolConstant  TRUE FALSE
+" CONSTANTS (uppercase idents)"
+syntax match EprolConstant    '\<[A-Z_][A-Z0-9_.]*\>'
 highlight default link EprolConstant Constant
 
 " PROCEDURE CALL "

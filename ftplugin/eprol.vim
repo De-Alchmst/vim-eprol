@@ -125,6 +125,7 @@ if exists("g:eprol_abbr")
   iabbr <buffer> accessor ACCESSOR
   iabbr <buffer> ref REF
   iabbr <buffer> until UNTIL
+  iabbr <buffer> extends EXTENDS
   iabbr <buffer> in IN
   iabbr <buffer> not NOT
   iabbr <buffer> and AND
