@@ -83,8 +83,7 @@ endfunction
 " ABBREVIATIONS "
 if exists("g:eprol_abbr")
   " trigger abbrevations on newline.
-  " must be via <expr> will cause infinite recursion otherwise (even with noremap
-  inore <buffer> <expr> <CR> "<C-]><CR>"
+  inore <buffer> <CR> <C-]><CR>
   iabbr <buffer> import IMPORT
   iabbr <buffer> export EXPORT
   iabbr <buffer> use USE
